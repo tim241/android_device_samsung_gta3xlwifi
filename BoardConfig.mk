@@ -34,16 +34,17 @@ TARGET_CPU_VARIANT        := cortex-a53
 TARGET_USES_64_BIT_BINDER := true
 
 # Board
-BOARD_VENDOR                 := samsung
-TARGET_SOC                   := exynos7904
-TARGET_BOARD_PLATFORM        := exynos5
-TARGET_BOARD_PLATFORM_GPU    := mali-g71
-TARGET_BOOTLOADER_BOARD_NAME := universal7885
-TARGET_NO_BOOTLOADER         := true
-TARGET_NO_RADIOIMAGE         := true
+BOARD_VENDOR                  := samsung
+TARGET_SOC                    := exynos7904
+TARGET_BOARD_PLATFORM         := exynos5
+TARGET_BOARD_PLATFORM_GPU     := mali-g71
+TARGET_BOOTLOADER_BOARD_NAME  := universal7885
+TARGET_NO_BOOTLOADER          := true
+TARGET_NO_RADIOIMAGE          := true
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 
 # Kernel
-BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
+BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_CMDLINE    := androidboot.selinux=permissive
 BOARD_KERNEL_BASE       := 0x10000000
 BOARD_KERNEL_PAGESIZE   := 2048
